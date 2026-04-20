@@ -1,0 +1,484 @@
+﻿.menuSection {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.sectionCard {
+  background: #f9f5ee;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+}
+
+@media (min-width: 768px) {
+  .sectionCard {
+    padding: 3rem;
+  }
+}
+
+.sectionTitle {
+  margin: 0 0 1.75rem;
+  text-align: center;
+  font-family: "Baskervville", Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f37021;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.12);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+.itemMain {
+  min-width: 0;
+  flex: 1;
+}
+
+.titleLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.itemTitle {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.48rem;
+}
+
+.badgeVeg {
+  color: #166534;
+  border: 1px solid #22c55e;
+  background: #f0fdf4;
+}
+
+.badgeNew {
+  color: #9a3412;
+  background: #ffedd5;
+  border: 1px solid #fb923c;
+}
+
+.itemDescription {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+.itemAllergens {
+  margin: 0.3rem 0 0;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.4;
+}
+
+.price {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .price {
+    text-align: right;
+    min-width: 5.5rem;
+    padding-top: 0.15rem;
+  }
+}
+
+.shareSection {
+  max-width: 960px;
+  margin: 5rem auto 0;
+}
+
+.shareHeader {
+  text-align: center;
+}
+
+.shareTitleRow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.shareBadgeNew {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  padding: 0.24rem 0.5rem;
+  color: #9a3412;
+  background: #ffedd5;
+  border: 1px solid #fb923c;
+}
+
+.shareTitle {
+  margin: 0;
+  font-family: "Baskervville", Georgia, serif;
+  font-size: clamp(1.85rem, 4vw, 2.25rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f37021;
+}
+
+.shareSubtitleBlock {
+  margin-top: 1.35rem;
+  color: #374151;
+}
+
+.shareSubtitleTitle {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.shareSubtitleText {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  color: #4b5563;
+}
+
+.shareSubtitleText + .shareSubtitleText {
+  margin-top: 0.5rem;
+}
+
+.shareList {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.shareItem {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.12);
+}
+
+.shareItem:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .shareItem {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem 2rem;
+  }
+}
+
+.shareItemMain {
+  min-width: 0;
+  flex: 1;
+  text-align: left;
+}
+
+.shareItemTitle {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.shareItemSubtitle {
+  margin: 0.2rem 0 0;
+  font-size: 0.86rem;
+  color: #6b7280;
+}
+
+.shareItemDescription {
+  margin: 0.45rem 0 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.shareItemExtra {
+  margin: 0.35rem 0 0;
+  font-size: 0.86rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.shareItemPrice {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .shareItemPrice {
+    text-align: right;
+    min-width: 6rem;
+    padding-top: 0.1rem;
+  }
+}
+
+.mainDishesSection {
+  max-width: 960px;
+  margin: 5rem auto 0;
+}
+
+.mainDishesHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mainDishesTitle {
+  margin: 0;
+  font-family: "Baskervville", Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f37021;
+}
+
+.mainDishesSubtitle {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.mainDishesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mainDishItem {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.12);
+}
+
+.mainDishItem:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .mainDishItem {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+.mainDishText {
+  min-width: 0;
+  flex: 1;
+}
+
+.mainDishName {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.mainDishDescription {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.mainDishAllergens {
+  margin: 0.3rem 0 0;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.4;
+}
+
+.mainDishPrice {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .mainDishPrice {
+    text-align: right;
+    min-width: 6rem;
+    padding-top: 0.15rem;
+  }
+}
+
+.biryaniBox {
+  margin-top: 2.2rem;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .biryaniBox {
+    padding: 2rem;
+  }
+}
+
+.biryaniTitle {
+  margin: 0;
+  text-align: center;
+  font-family: "Baskervville", Georgia, serif;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  letter-spacing: 0.06em;
+  color: #f37021;
+}
+
+.biryaniIntro {
+  margin-top: 1rem;
+}
+
+.biryaniIntroTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #78350f;
+}
+
+.biryaniIntroText {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #4b5563;
+}
+
+.biryaniList {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.biryaniItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(120, 53, 15, 0.16);
+}
+
+.biryaniItem:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .biryaniItem {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}
+
+.biryaniMain {
+  min-width: 0;
+  flex: 1;
+}
+
+.biryaniTitleLine {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.biryaniBullet {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 9999px;
+  background: #f37021;
+  flex-shrink: 0;
+}
+
+.biryaniName {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.biryaniDescription {
+  margin: 0.25rem 0 0 0.95rem;
+  font-size: 0.84rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.biryaniPrice {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .biryaniPrice {
+    text-align: right;
+    min-width: 6rem;
+    padding-top: 0.05rem;
+  }
+}
