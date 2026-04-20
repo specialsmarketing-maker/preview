@@ -84,3 +84,12 @@
   }
 }
 
+/* Prevent first-load flash of the fullscreen top menu links. */
+.ak-site_header.ak-style1 .header-top .top-main-menu {
+  overflow: hidden;
+}
+
+.ak-site_header.ak-style1 .header-top .top-main-menu .top-main-menu-li {
+  display: none;
+}
+
