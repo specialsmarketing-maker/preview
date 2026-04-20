@@ -264,9 +264,6 @@ export default function CateringPage() {
               <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 catering-event-cards">
                 <div className="col">
                   <div className="ak-card ak-style-1 h-100">
-                    <div className="ak-card-img">
-                      <img src="/assets/img/catering/catering-private-dining.jpg" alt="Private Dining & Feiern" />
-                    </div>
                     <div className="card-info">
                       <div className="card-text style-1">
                         <h5 className="card-title">Private Dining & Feiern</h5>
@@ -280,9 +277,6 @@ export default function CateringPage() {
                 </div>
                 <div className="col">
                   <div className="ak-card ak-style-1 h-100">
-                    <div className="ak-card-img">
-                      <img src="/assets/img/catering/catering-corporate.jpg" alt="Corporate Events & Business" />
-                    </div>
                     <div className="card-info">
                       <div className="card-text style-1">
                         <h5 className="card-title">Corporate Events & Business</h5>
@@ -297,9 +291,6 @@ export default function CateringPage() {
                 </div>
                 <div className="col">
                   <div className="ak-card ak-style-1 h-100">
-                    <div className="ak-card-img">
-                      <img src="/assets/img/catering/catering-wedding.jpg" alt="Wedding Catering & Receptions" />
-                    </div>
                     <div className="card-info">
                       <div className="card-text style-1">
                         <h5 className="card-title">Wedding Catering & Receptions</h5>
@@ -313,9 +304,6 @@ export default function CateringPage() {
                 </div>
                 <div className="col">
                   <div className="ak-card ak-style-1 h-100">
-                    <div className="ak-card-img">
-                      <img src="/assets/img/catering/catering-anniversary.jpg" alt="Anniversary & Family Celebrations" />
-                    </div>
                     <div className="card-info">
                       <div className="card-text style-1">
                         <h5 className="card-title">Anniversary & Family Celebrations</h5>
@@ -329,9 +317,6 @@ export default function CateringPage() {
                 </div>
                 <div className="col">
                   <div className="ak-card ak-style-1 h-100">
-                    <div className="ak-card-img">
-                      <img src="/assets/img/catering/catering-gala-vip.jpg" alt="Gala Dinners & VIP Events" />
-                    </div>
                     <div className="card-info">
                       <div className="card-text style-1">
                         <h5 className="card-title">Gala Dinners & VIP Events</h5>
@@ -345,9 +330,6 @@ export default function CateringPage() {
                 </div>
                 <div className="col">
                   <div className="ak-card ak-style-1 h-100">
-                    <div className="ak-card-img">
-                      <img src="/assets/img/catering/catering-cocktail.jpg" alt="Cocktail Receptions & Social" />
-                    </div>
                     <div className="card-info">
                       <div className="card-text style-1">
                         <h5 className="card-title">Cocktail Receptions & Social</h5>
@@ -361,9 +343,6 @@ export default function CateringPage() {
                 </div>
                 <div className="col">
                   <div className="ak-card ak-style-1 h-100">
-                    <div className="ak-card-img">
-                      <img src="/assets/img/catering/catering-cultural.jpg" alt="Cultural & Embassy Events" />
-                    </div>
                     <div className="card-info">
                       <div className="card-text style-1">
                         <h5 className="card-title">Cultural & Embassy Events</h5>
@@ -378,9 +357,6 @@ export default function CateringPage() {
                 </div>
                 <div className="col">
                   <div className="ak-card ak-style-1 h-100">
-                    <div className="ak-card-img">
-                      <img src="/assets/img/catering/catering-buffet.jpg" alt="Luxury Buffet & Flying Service" />
-                    </div>
                     <div className="card-info">
                       <div className="card-text style-1">
                         <h5 className="card-title">Luxury Buffet & Flying Service</h5>
@@ -394,9 +370,6 @@ export default function CateringPage() {
                 </div>
                 <div className="col">
                   <div className="ak-card ak-style-1 h-100">
-                    <div className="ak-card-img">
-                      <img src="/assets/img/catering/catering-outdoor.jpg" alt="Outdoor & Garden Parties" />
-                    </div>
                     <div className="card-info">
                       <div className="card-text style-1">
                         <h5 className="card-title">Outdoor & Garden Parties</h5>

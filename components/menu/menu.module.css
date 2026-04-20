@@ -482,3 +482,503 @@
     padding-top: 0.05rem;
   }
 }
+
+.classicsSection {
+  max-width: 960px;
+  margin: 5rem auto 0;
+}
+
+.classicsHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.classicsTitle {
+  margin: 0;
+  font-family: "Baskervville", Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f37021;
+}
+
+.classicsSubtitle {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.classicsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.classicsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.12);
+}
+
+.classicsItem:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .classicsItem {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+.classicsItemMain {
+  min-width: 0;
+  flex: 1;
+}
+
+.classicsTitleLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.classicsItemTitle {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.classicsItemDescription {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.classicsItemAllergens {
+  margin: 0.3rem 0 0;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.4;
+}
+
+.classicsItemPrice {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .classicsItemPrice {
+    text-align: right;
+    min-width: 6rem;
+    padding-top: 0.15rem;
+  }
+}
+
+.vegetarianBlock {
+  margin-top: 1.5rem;
+}
+
+.vegetarianTitle {
+  margin: 0 0 0.9rem;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f37021;
+}
+
+.dipsBlock {
+  margin-top: 2.4rem;
+}
+
+.dipsTitle {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f37021;
+}
+
+.dipsNote {
+  margin: 0.35rem 0 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.dipsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .dipsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem 1.8rem;
+  }
+}
+
+.dipsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.dipRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dipName {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.dipPrice {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.sidesBreadSaladsSection {
+  max-width: 960px;
+  margin: 5rem auto 0;
+}
+
+.groupedContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.groupedBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.groupedTitle {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1.35rem, 2.6vw, 1.7rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f37021;
+}
+
+.groupedList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.groupedItem {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.12);
+}
+
+.groupedItem:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .groupedItem {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+.groupedItemMain {
+  min-width: 0;
+  flex: 1;
+}
+
+.groupedItemName {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.groupedItemDescription {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.groupedItemAllergens {
+  margin: 0.3rem 0 0;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.4;
+}
+
+.groupedItemPrice {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .groupedItemPrice {
+    text-align: right;
+    min-width: 6rem;
+    padding-top: 0.15rem;
+  }
+}
+
+.dessertsSection {
+  max-width: 960px;
+  margin: 5rem auto 0;
+}
+
+.dessertsHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dessertsTitle {
+  margin: 0;
+  font-family: "Baskervville", Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f37021;
+}
+
+.dessertsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.dessertItem {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.12);
+}
+
+.dessertItem:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .dessertItem {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+.dessertMain {
+  min-width: 0;
+  flex: 1;
+}
+
+.dessertTitleRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.dessertName {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.highlightBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  padding: 0.24rem 0.5rem;
+  color: #9a3412;
+  background: #ffedd5;
+  border: 1px solid #fb923c;
+}
+
+.dessertDescription {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.dessertAllergens {
+  margin: 0.3rem 0 0;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.4;
+}
+
+.dessertPrice {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .dessertPrice {
+    text-align: right;
+    min-width: 6rem;
+    padding-top: 0.15rem;
+  }
+}
+
+.dessertFooterRecommendation {
+  margin: 2.5rem auto 0;
+  max-width: 40rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.coffeeIcon {
+  margin-top: 0.02rem;
+  color: #f37021;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.dessertFooterText {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #f37021;
+}
+
+.footerInfoSection {
+  max-width: 960px;
+  margin: 5rem auto 0;
+}
+
+.footerInfoWrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.footerInfoTitle {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: #f37021;
+  line-height: 1.35;
+}
+
+.footerInfoMainText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #374151;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+.footerInfoMainText p {
+  margin: 0;
+}
+
+.footerInfoNoteBlock {
+  margin-top: -0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: #4b5563;
+}
+
+.footerInfoNoteBlock p {
+  margin: 0;
+}
+
+.footerInfoAllergenBlock {
+  margin-top: -0.2rem;
+}
+
+.footerInfoAllergenTitle {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.footerInfoAllergenGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem 1.25rem;
+  text-align: left;
+  font-size: 0.88rem;
+  color: #374151;
+}
+
+@media (min-width: 768px) {
+  .footerInfoAllergenGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem 1.75rem;
+  }
+}
+
+.footerInfoAllergenLine {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footerInfoBrand {
+  margin: 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #6b7280;
+}

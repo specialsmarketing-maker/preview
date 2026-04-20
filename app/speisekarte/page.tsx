@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ClassicsAndDips } from "@/components/menu/ClassicsAndDips";
+import { Desserts } from "@/components/menu/Desserts";
+import { FooterInfo } from "@/components/menu/FooterInfo";
 import { MainDishes } from "@/components/menu/MainDishes";
 import { MenuSection } from "@/components/menu/MenuSection";
 import { SharePlatters } from "@/components/menu/SharePlatters";
+import { SidesBreadSalads } from "@/components/menu/SidesBreadSalads";
 import type { MenuItemData } from "@/components/menu/MenuItem";
 
 export const metadata: Metadata = {
@@ -103,6 +107,10 @@ export default function SpeisekartePage() {
               <MenuSection title="VORSPEISEN" items={VORSPEISEN_ITEMS} />
               <SharePlatters />
               <MainDishes />
+              <ClassicsAndDips />
+              <SidesBreadSalads />
+              <Desserts />
+              <FooterInfo />
             </div>
           </div>
         </div>
