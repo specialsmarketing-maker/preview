@@ -182,6 +182,11 @@ nextjs-portal {
   min-height: 440px;
 }
 
+/* Remove dark hover overlay on homepage food slider images. */
+#foodItems .home-food-slider .gallery.style-1 {
+  display: none !important;
+}
+
 @media screen and (max-width: 991px) {
   #foodItems .home-food-slider .gallery.ak-bg {
     min-height: 360px;
