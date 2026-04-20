@@ -93,3 +93,81 @@
   display: none;
 }
 
+/* Remove dark gradient overlay from video hero section. */
+.ak-hero.ak-hero--video-bg .ak-hero-bg {
+  display: none;
+}
+
+.ak-hero.ak-hero--video-bg .ak-hero-bg::after {
+  display: none;
+}
+
+/* Hide Next.js development portal overlay element in local dev. */
+nextjs-portal {
+  display: none !important;
+}
+
+.home-menu-links-panel {
+  background: #f37021;
+  padding: 48px 22px 38px;
+  margin-top: 12px;
+}
+
+.home-menu-links-title {
+  margin: 0 0 28px;
+  text-align: center;
+  color: #111111;
+  font-size: clamp(36px, 5vw, 54px);
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "Baskervville", Georgia, serif;
+}
+
+.home-menu-links-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.home-menu-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 14px;
+  border: 1px solid #c9c9c9;
+  background: #ececec;
+  color: #111111;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.home-menu-link-btn:hover {
+  background: #ffffff;
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 1199px) {
+  .home-menu-links-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-menu-links-panel {
+    padding: 32px 14px 24px;
+  }
+
+  .home-menu-links-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
