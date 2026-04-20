@@ -342,6 +342,28 @@
         },
       });
     }
+    if ($.exists(".home-food-slider")) {
+      var swiper = new Swiper(".home-food-slider", {
+        loop: true,
+        speed: 1000,
+        autoplay: {
+          delay: 2200,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 24,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
+      });
+    }
     if ($.exists(".ak-slider-core-services")) {
       var text = [
         " / Michelin fine Restaurants",

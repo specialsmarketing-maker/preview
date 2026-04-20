@@ -108,7 +108,8 @@ nextjs-portal {
 }
 
 .home-menu-links-panel {
-  background: #f37021;
+  background: #040d10;
+  border: 1px solid #4f4836;
   padding: 48px 22px 38px;
   margin-top: 12px;
 }
@@ -116,7 +117,7 @@ nextjs-portal {
 .home-menu-links-title {
   margin: 0 0 28px;
   text-align: center;
-  color: #111111;
+  color: #ffd28d;
   font-size: clamp(36px, 5vw, 54px);
   line-height: 1.1;
   font-weight: 400;
@@ -137,20 +138,22 @@ nextjs-portal {
   justify-content: center;
   min-height: 46px;
   padding: 10px 14px;
-  border: 1px solid #c9c9c9;
-  background: #ececec;
-  color: #111111;
+  border: 1px solid #4f4836;
+  background: #091e24;
+  color: #ffd28d;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-align: center;
   text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .home-menu-link-btn:hover {
-  background: #ffffff;
+  background: #ffd28d;
+  border-color: #ffd28d;
+  color: #040d10;
   transform: translateY(-1px);
 }
 
@@ -168,6 +171,20 @@ nextjs-portal {
   .home-menu-links-grid {
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+}
+
+#foodItems .home-food-slider .swiper-slide {
+  height: auto;
+}
+
+#foodItems .home-food-slider .gallery.ak-bg {
+  min-height: 440px;
+}
+
+@media screen and (max-width: 991px) {
+  #foodItems .home-food-slider .gallery.ak-bg {
+    min-height: 360px;
   }
 }
 
