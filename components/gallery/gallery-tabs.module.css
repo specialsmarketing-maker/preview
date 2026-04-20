@@ -1,0 +1,35 @@
+.tabsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  justify-content: center;
+  margin-bottom: 2.25rem;
+}
+
+.tabBtn {
+  min-width: 112px;
+  border: 1px solid rgba(255, 210, 141, 0.35);
+  background: #0f0f0f;
+  color: #ffd28d;
+  padding: 0.9rem 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: "Baskervville", Georgia, serif;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.tabBtnActive {
+  background: #ffd28d;
+  color: #040d10;
+  border-color: #ffd28d;
+}
+
+.tabBtn:hover {
+  border-color: #ffd28d;
+  color: #ffd28d;
+  transform: translateY(-1px);
+}

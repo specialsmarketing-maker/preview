@@ -1,30 +1,107 @@
+import fs from "node:fs";
+import path from "node:path";
 import type { Metadata } from "next";
-import { TemplatePageBody } from "@/components/TemplatePageBody";
-import { loadTemplateBody } from "@/lib/loadTemplateBody";
+import Link from "next/link";
+import { GalleryTabs } from "@/components/gallery/GalleryTabs";
 import pageMeta from "@/content/page-meta.json";
 
 export const metadata: Metadata = {
   title: pageMeta.gallery.title,
 };
 
-const html = loadTemplateBody("gallery.body.html");
-const galleryImages = [
-  "/assets/img/gallery/Hari1090-Restaurant-by-Kumars-Kitchen-Aperol-Sommer-Garten-Chicken-Pakore-Huhnchen-gebacken-1-scaled-1.jpg",
-  "/assets/img/gallery/Hari1090-Restaurant-by-Kumars-Kitchen-Avocado-Lachs-Tartare-Salmon-1-scaled-1.jpg",
-  "/assets/img/gallery/Hari1090-Restaurant-by-Kumars-Kitchen-Avocado-Taco-1-scaled-1.jpg",
-  "/assets/img/gallery/Hari1090-Restaurant-by-Kumars-Kitchen-Chicken-Pakora-Huhnchen-gebacken-Gastgarten-1-scaled-1.jpg",
-  "/assets/img/gallery/Hari1090-Restaurant-by-Kumars-Kitchen-Chicken-Taco-1-scaled-1.jpg",
-  "/assets/img/gallery/Hari1090-Restaurant-by-Kumars-Kitchen-Cocktail-Lical-Spritz-Sommer-1-scaled-1.jpg",
-];
+const galleryDir = path.join(process.cwd(), "public", "assets", "img", "gallery");
 
-const localGalleryHtml = html
-  .replaceAll("/assets/img/gallery_1.jpg", galleryImages[0])
-  .replaceAll("/assets/img/gallery_2.jpg", galleryImages[1])
-  .replaceAll("/assets/img/gallery_3.jpg", galleryImages[2])
-  .replaceAll("/assets/img/gallery_4.jpg", galleryImages[3])
-  .replaceAll("/assets/img/gallery_5.jpg", galleryImages[4])
-  .replaceAll("/assets/img/gallery_6.jpg", galleryImages[5]);
+type GalleryCategory = "desserts" | "food" | "drinks" | "garden" | "location";
+
+function inferCategory(fileName: string): GalleryCategory {
+  const n = fileName.toLowerCase();
+
+  const hasAny = (keywords: string[]) => keywords.some((k) => n.includes(k));
+
+  const dessertKeywords = ["dessert", "tiramisu", "halwa", "strudel", "cheese-cake", "profiteroles", "sweet"];
+  const drinkKeywords = [
+    "cocktail",
+    "spritz",
+    "martini",
+    "shot",
+    "whiskey",
+    "tequila",
+    "vodka",
+    "aperol",
+    "paloma",
+    "italicus",
+    "champagne",
+    "lilet",
+    "lilac",
+    "drinks",
+    "getranke",
+    "bar",
+    "lassi",
+  ];
+  const gardenKeywords = ["garten", "garden", "gastgarten", "outdoor", "terrace", "sommer"];
+  const locationKeywords = [
+    "speisesaal",
+    "tables",
+    "tisch",
+    "eingang",
+    "althanstrase",
+    "restaurant",
+    "interior",
+    "ambience",
+    "location",
+  ];
+
+  if (hasAny(dessertKeywords)) return "desserts";
+  if (hasAny(drinkKeywords)) return "drinks";
+  if (hasAny(gardenKeywords)) return "garden";
+  if (hasAny(locationKeywords)) return "location";
+
+  if (
+    n.includes("food") ||
+    n.includes("speise") ||
+    n.includes("chicken") ||
+    n.includes("biryani") ||
+    n.includes("samosa") ||
+    n.includes("taco") ||
+    n.includes("lachs") ||
+    n.includes("shrimp")
+  ) {
+    return "food";
+  }
+
+  return "food"; // default category for uncategorized gallery images
+}
+
+const galleryImages = fs
+  .readdirSync(galleryDir)
+  .filter((name) => /\.(jpe?g|png|webp)$/i.test(name))
+  .sort((a, b) => a.localeCompare(b))
+  .map((name) => ({
+    src: `/assets/img/gallery/${encodeURIComponent(name)}`,
+    category: inferCategory(name),
+  }));
 
 export default function GalleryPage() {
-  return <TemplatePageBody html={localGalleryHtml} />;
+  return (
+    <>
+      <section>
+        <div className="ak-commmon-hero ak-style1 ak-bg" data-src="/assets/img/banner_top_all.png">
+          <div className="ak-commmon-heading">
+            <div className="ak-section-heading ak-style-1 ak-type-1 ak-color-1 page-top-title">
+              <div className="ak-section-subtitle">
+                <Link href="/">Home</Link> / Gallery
+              </div>
+              <h2 className="ak-section-title page-title-anim">Gallery</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="ak-height-180 ak-height-lg-90"></div>
+
+      <section className="container">
+        <GalleryTabs items={galleryImages} />
+      </section>
+    </>
+  );
 }
