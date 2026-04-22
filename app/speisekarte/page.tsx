@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ExklusiveExperienceMenu } from "@/components/speisekarte/ExklusiveExperienceMenu";
 
 export const metadata: Metadata = {
   title: "Speisekarte | Hari1090 by Kumar's Kitchen - Wien",
-  description: "Speisekarte – Hari1090 by Kumar's Kitchen, Wien.",
+  description:
+    "Hari1090 Exklusive Experience – Culinarius Frühlingsgenusswoche: kuratiertes Fine-Dining-Menü, Hari1090 Wien.",
 };
 
 export default function SpeisekartePage() {
@@ -24,6 +26,13 @@ export default function SpeisekartePage() {
 
       <section className="ak-about-bg-color">
         <div className="ak-height-100 ak-height-lg-50"></div>
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-12 col-xl-10">
+              <ExklusiveExperienceMenu />
+            </div>
+          </div>
+        </div>
         <div className="ak-height-150 ak-height-lg-80"></div>
       </section>
     </>
