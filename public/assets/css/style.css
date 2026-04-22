@@ -4507,32 +4507,35 @@ img[src$="Hari1090-Logo.svg"] {
   height: 100%;
 }
 
-/* Meet the Chef page: keep portrait at a friendly size (override flex-grow: 2) */
+/* Meet the Chef page: compact portrait, no cropping */
 .meet-the-content-about-section .about-img.meet-chef-photo {
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: clamp(260px, 38%, 440px);
-  max-width: 440px;
+  flex-basis: auto;
+  max-width: min(400px, 100%);
+  width: min(100%, 400px);
   align-self: center;
+  overflow: visible;
 }
 .meet-the-content-about-section .about-img.meet-chef-photo img {
   width: 100%;
+  max-width: 100%;
   height: auto;
-  max-height: min(72vh, 560px);
-  object-fit: cover;
-  object-position: center 20%;
-  border-radius: 4px;
+  max-height: none;
+  object-fit: contain;
+  object-position: center center;
+  border-radius: 0;
   display: block;
 }
 @media screen and (max-width: 991px) {
   .meet-the-content-about-section .about-img.meet-chef-photo {
     flex-basis: 100%;
-    max-width: 420px;
+    max-width: min(100%, 340px);
     margin-left: auto;
     margin-right: auto;
   }
   .meet-the-content-about-section .about-img.meet-chef-photo img {
-    max-height: 480px;
+    max-height: none;
   }
 }
 

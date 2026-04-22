@@ -7,8 +7,7 @@ export const metadata: Metadata = {
   title: pageMeta.reservations.title,
 };
 
-const html = loadTemplateBody("reservations.body.html");
-
 export default function ReservationsPage() {
+  const html = loadTemplateBody("reservations.body.html");
   return <TemplatePageBody html={html} />;
 }

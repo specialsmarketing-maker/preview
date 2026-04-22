@@ -7,8 +7,7 @@ export const metadata: Metadata = {
   title: pageMeta.about.title,
 };
 
-const html = loadTemplateBody("about.body.html");
-
 export default function AboutPage() {
+  const html = loadTemplateBody("about.body.html");
   return <TemplatePageBody html={html} />;
 }

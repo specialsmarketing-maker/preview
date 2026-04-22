@@ -7,8 +7,7 @@ export const metadata: Metadata = {
   title: pageMeta.contact.title,
 };
 
-const html = loadTemplateBody("contact.body.html");
-
 export default function ContactPage() {
+  const html = loadTemplateBody("contact.body.html");
   return <TemplatePageBody html={html} />;
 }

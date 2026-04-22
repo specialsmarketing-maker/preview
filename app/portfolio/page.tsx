@@ -7,8 +7,7 @@ export const metadata: Metadata = {
   title: pageMeta.portfolio.title,
 };
 
-const html = loadTemplateBody("portfolio.body.html");
-
 export default function PortfolioPage() {
+  const html = loadTemplateBody("portfolio.body.html");
   return <TemplatePageBody html={html} />;
 }

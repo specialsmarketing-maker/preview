@@ -7,8 +7,7 @@ export const metadata: Metadata = {
   title: pageMeta.home.title,
 };
 
-const homeHtml = loadTemplateBody("home.body.html");
-
 export default function HomePage() {
+  const homeHtml = loadTemplateBody("home.body.html");
   return <TemplatePageBody html={homeHtml} />;
 }

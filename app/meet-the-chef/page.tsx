@@ -7,8 +7,7 @@ export const metadata: Metadata = {
   title: pageMeta["meet-the-chef"].title,
 };
 
-const html = loadTemplateBody("meet-the-chef.body.html");
-
 export default function MeetTheChefPage() {
+  const html = loadTemplateBody("meet-the-chef.body.html");
   return <TemplatePageBody html={html} />;
 }
