@@ -4149,6 +4149,31 @@ img[src$="Hari1090-Logo.svg"] {
   );
 }
 
+/* Video hero: brown brand gradient over footage (ak-hero-bg is hidden for video — see app/globals.css) */
+.ak-hero.ak-hero--video-bg .ak-hero-video-wrap .ak-hero-video-el {
+  z-index: 0;
+}
+.ak-hero.ak-hero--video-bg .ak-hero-video-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+      120deg,
+      rgba(60, 28, 10, 0.52) 0%,
+      rgba(75, 38, 14, 0.58) 35%,
+      rgba(50, 24, 8, 0.72) 70%,
+      rgba(32, 16, 6, 0.82) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(180, 83, 9, 0.22) 0%,
+      rgba(100, 48, 16, 0.45) 50%,
+      rgba(30, 14, 6, 0.78) 100%
+    );
+}
+
 .ak-hero.ak-style1 .hero-text-section {
   z-index: 10;
   margin-left: 160px;
