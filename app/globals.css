@@ -93,7 +93,7 @@
   display: none;
 }
 
-/* Video hero: no static ak-hero-bg image layer; gradient sits on .ak-hero-video-wrap (see /assets/css/style.css). */
+/* Remove dark gradient overlay from video hero section. */
 .ak-hero.ak-hero--video-bg .ak-hero-bg {
   display: none;
 }
